@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+}
+
+.btn {
+  @apply bg-macColor-200 text-gray-200 p-4 text-center shadow-md transition-colors duration-200 ease-in-out w-14 h-14;
+}
+
+.btn.orange {
+  @apply bg-macColor-400 text-white p-4 text-center shadow-md transition-colors duration-200 ease-in-out;
+}
+
+.calculator.dark .btn {
+  @apply bg-gray-700 text-gray-200 hover:bg-gray-800;
+}
+
+.calculator.dark .btn.orange {
+  @apply bg-macColor-400;
+}
